@@ -1,0 +1,72 @@
+@font-face {
+    font-family: digital7;
+    src: url(./digital7.ttf);
+}
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #10101E;
+}
+
+.datetime {
+    color: #fff;
+    background: #10101E;
+    font-family: 'Segoe UI', sans-serif;
+    min-width: 360px;
+    width: fit-content;
+    padding: 15px 10px;
+    border: 3px solid #3389FF;
+    border-radius: 5px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+    transition: 0.5s;
+    transition-property: background, box-shadow;
+}
+
+.datetime:hover {
+    background: #3389FF;
+    box-shadow: 0 0 30px #3389FF;
+}
+
+
+.date {
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.time {
+    font-size: 75px;
+    font-family: digital7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time span:not(:last-child) {
+    position: relative;
+    margin: 0 6px; 
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.time span:last-child {
+    background: #3389FF;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 0 5px;
+    border-radius: 3px;
+
+}
